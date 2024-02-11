@@ -1,0 +1,92 @@
+[
+    {
+        "payload_bytes": 107,
+        "redelivered": true,
+        "exchange": "RandomProject.Workers-dlq",
+        "routing_key": "RandomProject.Events.RandomEvent",
+        "message_count": 3,
+        "properties": {
+            "message_id": "3a10a15566a293cb861eaa48f50936bf",
+            "delivery_mode": 2,
+            "headers": {
+                "x-death": [
+                    {
+                        "count": 1,
+                        "exchange": "RandomProject.Workers",
+                        "queue": "RandomProject.Queue",
+                        "reason": "rejected",
+                        "routing-keys": [
+                            "RandomProject.Events.RandomEvent"
+                        ],
+                        "time": 1707503851
+                    }
+                ],
+                "x-first-death-exchange": "RandomProject.Workers",
+                "x-first-death-queue": "RandomProject.Queue",
+                "x-first-death-reason": "rejected"
+            }
+        },
+        "payload": "{\"user\":\"randomuser@example.com\",\"phone\":\"+123456789\",\"name\":\"John Doe\",\"category\":\"Gold\"}",
+        "payload_encoding": "string"
+    },
+    {
+        "payload_bytes": 97,
+        "redelivered": true,
+        "exchange": "RandomProject.Workers-dlq",
+        "routing_key": "RandomProject.Events.RandomEvent",
+        "message_count": 2,
+        "properties": {
+            "message_id": "3a10a1694e68e95c4b1bc76bab8222c2",
+            "delivery_mode": 2,
+            "headers": {
+                "x-death": [
+                    {
+                        "count": 1,
+                        "exchange": "RandomProject.Workers",
+                        "queue": "RandomProject.Queue",
+                        "reason": "rejected",
+                        "routing-keys": [
+                            "RandomProject.Events.RandomEvent"
+                        ],
+                        "time": 1707505160
+                    }
+                ],
+                "x-first-death-exchange": "RandomProject.Workers",
+                "x-first-death-queue": "RandomProject.Queue",
+                "x-first-death-reason": "rejected"
+            }
+        },
+        "payload": "{\"user\":\"anotheruser@example.com\",\"phone\":\"+987654321\",\"name\":\"Alice\",\"category\":\"Silver\"}",
+        "payload_encoding": "string"
+    },
+    {
+        "payload_bytes": 97,
+        "redelivered": true,
+        "exchange": "RandomProject.Workers-dlq",
+        "routing_key": "RandomProject.Events.RandomEvent",
+        "message_count": 1,
+        "properties": {
+            "message_id": "3a10a16b0e950d88065cab8c93e372e1",
+            "delivery_mode": 2,
+            "headers": {
+                "x-death": [
+                    {
+                        "count": 1,
+                        "exchange": "RandomProject.Workers",
+                        "queue": "RandomProject.Queue",
+                        "reason": "rejected",
+                        "routing-keys": [
+                            "RandomProject.Events.RandomEvent"
+                        ],
+                        "time": 1707505268
+                    }
+                ],
+                "x-first-death-exchange": "RandomProject.Workers",
+                "x-first-death-queue": "RandomProject.Queue",
+                "x-first-death-reason": "rejected"
+            }
+        },
+        "payload": "{\"user\":\"testuser@example.com\",\"phone\":\"+555123456\",\"name\":\"Test User\",\"category\":\"Bronze\"}",
+        "payload_encoding": "string"
+    }
+]
